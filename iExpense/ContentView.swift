@@ -15,7 +15,7 @@ struct ContentView: View {
       self.showingSheet.toggle()
     }
     .sheet(isPresented: $showingSheet) {
-      // contents of the sheet
+      SecondView()
     }
   }
 }
