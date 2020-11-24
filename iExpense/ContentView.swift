@@ -8,14 +8,21 @@
 import SwiftUI
 
 struct ContentView: View {
-  @State private var showingSheet = false
+  @State private var numbers: [Int] = []
+  @State private var currentNumber = 1
 
   var body: some View {
-    Button("Show Sheet") {
-      self.showingSheet.toggle()
-    }
-    .sheet(isPresented: $showingSheet) {
-      SecondView()
+    VStack {
+      List {
+        ForEach(numbers, id: \.self) {
+          Text("\($0)")
+        }
+      }
+
+      Button("Add Number") {
+        self.numbers.append(self.currentNumber)
+        self.currentNumber += 1
+      }
     }
   }
 }
