@@ -13,6 +13,10 @@ struct ExpenseItem {
   let amount: Int
 }
 
+class Expenses: ObservableObject {
+  @Published var items = [ExpenseItem]()
+}
+
 struct ContentView: View {
   var body: some View {
     Text("Hello World!")
