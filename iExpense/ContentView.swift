@@ -14,14 +14,21 @@ struct ExpenseItem {
 }
 
 class Expenses: ObservableObject {
-  @Published var items = [ExpenseItem]()
+  @Published var items: [ExpenseItem] = []
 }
 
 struct ContentView: View {
   @ObservedObject var expenses = Expenses()
-  
+
   var body: some View {
-    Text("Hello World!")
+    NavigationView {
+      List {
+        ForEach(expenses.items, id: \.name) { item in
+          Text(item.name)
+        }
+      }
+      .navigationBarTitle("iExpense")
+    }
   }
 }
 
