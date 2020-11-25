@@ -13,6 +13,7 @@ struct ContentView: View {
   var body: some View {
     Button("Tap count: \(tapCount)") {
       self.tapCount += 1
+      UserDefaults.standard.set(self.tapCount, forKey: "Tap")
     }
   }
 }
