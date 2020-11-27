@@ -34,8 +34,7 @@ struct ContentView: View {
       .navigationBarItems(
         trailing: Button(
           action: {
-            let expense = ExpenseItem(name: "Test", type: "Personal", amount: 5)
-            self.expenses.items.append(expense)
+            self.showingAddExpense = true
           },
           label: {
             Image(systemName: "plus")
