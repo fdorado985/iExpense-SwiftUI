@@ -13,6 +13,7 @@
 		A910BA4E256B4034004AA514 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A910BA4D256B4034004AA514 /* Assets.xcassets */; };
 		A910BA51256B4034004AA514 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A910BA50256B4034004AA514 /* Preview Assets.xcassets */; };
 		A910BA54256B4034004AA514 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A910BA52256B4034004AA514 /* LaunchScreen.storyboard */; };
+		A9E95EE12570D27A006D3FC1 /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E95EE02570D27A006D3FC1 /* AddView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		A910BA50256B4034004AA514 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A910BA53256B4034004AA514 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A910BA55256B4034004AA514 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9E95EE02570D27A006D3FC1 /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				A910BA52256B4034004AA514 /* LaunchScreen.storyboard */,
 				A910BA55256B4034004AA514 /* Info.plist */,
 				A910BA4F256B4034004AA514 /* Preview Content */,
+				A9E95EE02570D27A006D3FC1 /* AddView.swift */,
 			);
 			path = iExpense;
 			sourceTree = "<group>";
@@ -167,6 +170,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9E95EE12570D27A006D3FC1 /* AddView.swift in Sources */,
 				A910BA48256B4034004AA514 /* AppDelegate.swift in Sources */,
 				A910BA4A256B4034004AA514 /* SceneDelegate.swift in Sources */,
 				A910BA4C256B4034004AA514 /* ContentView.swift in Sources */,
