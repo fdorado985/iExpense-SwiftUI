@@ -20,6 +20,7 @@ class Expenses: ObservableObject {
 
 struct ContentView: View {
   @ObservedObject var expenses = Expenses()
+  @State private var showingAddExpense = false
 
   var body: some View {
     NavigationView {
@@ -41,6 +42,9 @@ struct ContentView: View {
           }
         )
       )
+      .sheet(isPresented: $showingAddExpense) {
+        AddView()
+      }
     }
   }
 
