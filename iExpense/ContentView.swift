@@ -53,7 +53,22 @@ struct ContentView: View {
             }
 
             Spacer()
-            Text("$\(item.amount)")
+
+            if item.amount < 10 {
+              Text("$\(item.amount) 🤑")
+                .font(.title)
+                .fontWeight(.bold)
+                .foregroundColor(.green)
+            } else if item.amount > 100 {
+              Text("$\(item.amount) 💸")
+                .font(.title)
+                .fontWeight(.bold)
+                .foregroundColor(.red)
+            } else {
+              Text("$\(item.amount) 😕")
+                .font(.title)
+                .fontWeight(.bold)
+            }
           }
         }
         .onDelete(perform: removeItems)
